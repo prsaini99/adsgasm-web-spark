@@ -1,5 +1,4 @@
-
-import { GraduationCap, Monitor, Users } from "lucide-react";
+import { GraduationCap, Monitor } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const School = () => {
@@ -19,14 +18,6 @@ const School = () => {
       duration: "6 weeks",
       icon: <GraduationCap className="h-6 w-6" />,
       popular: true
-    },
-    {
-      id: 3,
-      title: "Content Creation for Ads",
-      description: "Develop compelling content specifically designed to convert in ad formats.",
-      duration: "5 weeks",
-      icon: <Users className="h-6 w-6" />,
-      popular: false
     }
   ];
 
