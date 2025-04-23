@@ -1,11 +1,9 @@
-
 import { Button } from "@/components/ui/button";
-
 const Hero = () => {
-  return (
-    <section className="relative bg-gradient-to-r from-adsgasm-dark via-adsgasm to-adsgasm-light text-white">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yNS45OTk5IDI2LjAwMDFDMjUuOTk5OSAyNS40NDc4IDI2LjQ0NzcgMjUuMDAwMSAyNi45OTk5IDI1LjAwMDFDMjcuNTUyMiAyNS4wMDAxIDI3Ljk5OTkgMjUuNDQ3OCAyNy45OTk5IDI2LjAwMDFDMjcuOTk5OSAyNi41NTIzIDI3LjU1MjIgMjcuMDAwMSAyNi45OTk5IDI3LjAwMDFDMjYuNDQ3NyAyNy4wMDAxIDI1Ljk5OTkgMjYuNTUyMyAyNS45OTk5IDI2LjAwMDFaIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIgZmlsbD0ibm9uZSIvPgo8L3N2Zz4=')]"
-        style={{ opacity: 0.2 }}></div>
+  return <section className="relative bg-gradient-to-r from-adsgasm-dark via-adsgasm to-adsgasm-light text-white">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yNS45OTk5IDI2LjAwMDFDMjUuOTk5OSAyNS40NDc4IDI2LjQ0NzcgMjUuMDAwMSAyNi45OTk5IDI1LjAwMDFDMjcuNTUyMiAyNS4wMDAxIDI3Ljk5OTkgMjUuNDQ3OCAyNy45OTk5IDI2LjAwMDFDMjcuOTk5OSAyNi41NTIzIDI3LjU1MjIgMjcuMDAwMSAyNi45OTk5IDI3LjAwMDFDMjYuNDQ3NyAyNy4wMDAxIDI1Ljk5OTkgMjYuNTUyMyAyNS45OTk5IDI2LjAwMDFaIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIgZmlsbD0ibm9uZSIvPgo8L3N2Zz4=')]" style={{
+      opacity: 0.2
+    }}></div>
       <div className="container mx-auto px-6 py-24 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 relative z-10">
@@ -22,7 +20,7 @@ const Hero = () => {
               <Button size="lg" className="bg-adsgasm-accent hover:bg-adsgasm-accent/90 text-white">
                 Get Started
               </Button>
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-white hover:bg-white/10 text-slate-950">
                 Learn More
               </Button>
             </div>
@@ -59,8 +57,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
