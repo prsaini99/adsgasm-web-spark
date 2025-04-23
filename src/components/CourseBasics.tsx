@@ -1,9 +1,12 @@
-
+import { useState } from "react";
 import { Book, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import EnrollmentDialog from "./EnrollmentDialog";
 
 const CourseBasics = () => {
+  const [isEnrollmentOpen, setIsEnrollmentOpen] = useState(false);
+
   const modules = [
     {
       title: "Introduction to Digital Advertising",
@@ -48,7 +51,11 @@ const CourseBasics = () => {
               <span>8 hours per week</span>
             </div>
           </div>
-          <Button size="lg" className="bg-adsgasm-accent hover:bg-adsgasm-accent/90">
+          <Button 
+            size="lg" 
+            className="bg-adsgasm-accent hover:bg-adsgasm-accent/90"
+            onClick={() => setIsEnrollmentOpen(true)}
+          >
             Enroll Now
             <ArrowRight className="ml-2" />
           </Button>
@@ -102,6 +109,12 @@ const CourseBasics = () => {
             </li>
           </ul>
         </div>
+
+        <EnrollmentDialog 
+          isOpen={isEnrollmentOpen}
+          onClose={() => setIsEnrollmentOpen(false)}
+          courseName="Fundamentals of Digital Advertising"
+        />
       </div>
     </section>
   );

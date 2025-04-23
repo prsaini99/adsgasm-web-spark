@@ -1,9 +1,12 @@
-
+import { useState } from "react";
 import { Book, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import EnrollmentDialog from "./EnrollmentDialog";
 
 const CourseAdvanced = () => {
+  const [isEnrollmentOpen, setIsEnrollmentOpen] = useState(false);
+
   const modules = [
     {
       title: "Advanced Campaign Strategy",
@@ -51,7 +54,11 @@ const CourseAdvanced = () => {
               <span>10 hours per week</span>
             </div>
           </div>
-          <Button size="lg" className="bg-adsgasm-accent hover:bg-adsgasm-accent/90">
+          <Button 
+            size="lg" 
+            className="bg-adsgasm-accent hover:bg-adsgasm-accent/90"
+            onClick={() => setIsEnrollmentOpen(true)}
+          >
             Enroll Now
             <ArrowRight className="ml-2" />
           </Button>
@@ -105,6 +112,12 @@ const CourseAdvanced = () => {
             </li>
           </ul>
         </div>
+
+        <EnrollmentDialog 
+          isOpen={isEnrollmentOpen}
+          onClose={() => setIsEnrollmentOpen(false)}
+          courseName="Advanced Performance Marketing"
+        />
       </div>
     </section>
   );
