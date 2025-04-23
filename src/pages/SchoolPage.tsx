@@ -1,16 +1,16 @@
 
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+import School from "@/components/School";
 import Footer from "@/components/Footer";
 
-const Index = () => {
+const SchoolPage = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <Hero />
+      <School />
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default SchoolPage;
