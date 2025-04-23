@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				adsgasm: {
+					DEFAULT: '#0a3d62',
+					light: '#3c6382',
+					dark: '#071e3d',
+					accent: '#ff6b6b',
+					secondary: '#48dbfb'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
