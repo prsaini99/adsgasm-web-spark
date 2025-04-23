@@ -76,6 +76,7 @@ const School = () => {
                   ? "bg-adsgasm-accent hover:bg-adsgasm-accent/90 text-white w-full"
                   : "border-white/20 text-white hover:bg-white/10 w-full"
                 }
+                onClick={() => window.location.href = course.id === 1 ? '/course-basics' : '/course-advanced'}
               >
                 Learn More
               </Button>
