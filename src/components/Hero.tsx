@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+
 const Hero = () => {
-  return <section className="relative bg-gradient-to-r from-adsgasm-dark via-adsgasm to-adsgasm-light text-white">
+  return (
+    <section className="relative bg-gradient-to-r from-adsgasm-dark via-adsgasm to-adsgasm-light text-white">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yNS45OTk5IDI2LjAwMDFDMjUuOTk5OSAyNS40NDc4IDI2LjQ0NzcgMjUuMDAwMSAyNi45OTk5IDI1LjAwMDFDMjcuNTUyMiAyNS4wMDAxIDI3Ljk5OTkgMjUuNDQ3OCAyNy45OTk5IDI2LjAwMDFDMjcuOTk5OSAyNi41NTIzIDI3LjU1MjIgMjcuMDAwMSAyNi45OTk5IDI3LjAwMDFDMjYuNDQ3NyAyNy4wMDAxIDI1Ljk5OTkgMjYuNTUyMyAyNS45OTk5IDI2LjAwMDFaIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIgZmlsbD0ibm9uZSIvPgo8L3N2Zz4=')]" style={{
       opacity: 0.2
     }}></div>
@@ -17,12 +20,16 @@ const Hero = () => {
               We deliver performance marketing, content development, and education that drives real business results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-adsgasm-accent hover:bg-adsgasm-accent/90 text-white">
-                Get Started
-              </Button>
-              <Button size="lg" variant="outline" className="border-white hover:bg-white/10 text-slate-950">
-                Learn More
-              </Button>
+              <Link to="/get-started">
+                <Button size="lg" className="bg-adsgasm-accent hover:bg-adsgasm-accent/90 text-white">
+                  Get Started
+                </Button>
+              </Link>
+              <Link to="/learn-more">
+                <Button size="lg" variant="outline" className="border-white hover:bg-white/10 text-white">
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="hidden lg:flex justify-end relative z-10">
@@ -57,6 +64,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
